@@ -9,6 +9,8 @@ body {
 }
 
 nav {
+    z-index: 2;
+    position: relative;
     display: flex;
     justify-content: space-around;
     padding: 10px;
@@ -17,7 +19,6 @@ nav {
 .nav-boven {
     flex: 1; 
     text-align: center;
-    color: rgb(119, 17, 17);
     padding: 15px;
     margin: 0 5px;
 }
@@ -32,19 +33,33 @@ li{
     list-style: none;
     font-size: 14pt;
     display: inline;
+    margin-right: 15px;
 }
 
 a{
     text-decoration: none;
-    color: black; /* Kleur zwart gemaakt zodat ik het nog kan zien totdat de video word geplaatst */
+    color: white; /* Kleur naar wit veranderd volgens commit NAV-03 */  
 }
 
-.kaka{
+.inlog a{
+    color: black;
+}
+
+.inlog{
     padding: 5px;
     padding-left: 15px;
     padding-right: 15px;
-    color: black;
     background-color: red;
     border: 1px red solid;
     border-radius: 20px;
+}
+
+.hero_new__video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    object-fit: cover; 
+    z-index: 1; 
 }
